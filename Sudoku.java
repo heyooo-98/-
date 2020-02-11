@@ -10,6 +10,16 @@ public class Sudoku{
     private Scanner scan=new Scanner(System.in);
     private int countNum=0;
 
+    public static void main(String[] args){
+
+        Sudoku test1=new Sudoku();
+        test1.start();
+
+        int[] a=new int[2];
+        System.out.println(a);
+        System.out.println(a[0]);
+
+    }
 
     {
         for(int i=0;i<10;i++){
@@ -32,6 +42,8 @@ public class Sudoku{
 
 
     }
+
+
 
     public Sudoku(){}
 
@@ -296,19 +308,4 @@ public class Sudoku{
         violentBreak();
         System.out.println("Recursion times:"+countNum);
     }
-
-
-
-
-    public static void main(String[] args){
-
-        Sudoku test1=new Sudoku();
-        test1.start();
-
-        int[] a=new int[2];
-        System.out.println(a);
-        System.out.println(a[0]);
-
-    }
-
 }
